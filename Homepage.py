@@ -11,7 +11,7 @@ st.set_page_config(
 st.title("Main Page")
 st.sidebar.success("Select a page above.")
 
-
+!sudo su - -c "R -e \"devtools::install_url('https://cran.r-project.org/src/contrib/Archive/extraTrees/extraTrees_1.0.5.tar.gz')\""
 
 # def load_data():
 #     return pd.DataFrame(
