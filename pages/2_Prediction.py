@@ -38,7 +38,7 @@ if submit:
         
         st.write("Prediction result:")
         #Rscript
-        subprocess.run(['Rscript', 'model.r', unique_id+'_padel.csv', unique_id+'_output.csv'])
+        subprocess.run(['Rscript', 'model.R', unique_id+'_padel.csv', unique_id+'_output.csv'])
 
         #讀入output result
         df_output = pd.read_csv(f"./tmp/{unique_id}_output.csv", encoding="utf-8")
