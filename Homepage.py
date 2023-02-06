@@ -4,6 +4,8 @@ import numpy as np
 import subprocess
 # import rpy2.robjects as robjects
 
+subprocess.run(['Rscript', 'installextra.R'])
+
 st.set_page_config(
     page_title="IPL App"
 )
