@@ -4,7 +4,7 @@ args = commandArgs(trailingOnly=TRUE)
 
 et <- readRDS("mtmodel.rds")
 load("feature_minmax.Rdata")
-library(extraTrees)
+#library(extraTrees)
 
 inputdata <- read.csv( paste0('./tmp/',args[1]), fileEncoding = "UTF-8-BOM")   #args[1]是padel.csv
 len <- nrow(inputdata)
